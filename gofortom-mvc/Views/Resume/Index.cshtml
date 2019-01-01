@@ -1,0 +1,360 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<link href="https://fonts.googleapis.com/css?family=Arimo|Roboto" rel="stylesheet">
+
+	<style type="text/css">
+		.main-resume {
+			font-family: Arimo;
+			font-size: 15px;
+			color: #525252;
+			line-height: 25.5px;
+			width: 1000px;
+			margin: auto;
+			margin-bottom: 40px;
+		}
+
+			.main-resume p {
+				margin-top: 0px;
+				margin-block-start: 0px;
+				margin-block-end: 0px;
+			}
+
+			.main-resume h1 {
+				font-size: 19px;
+				width: 100%;
+				border-bottom: solid 2px #c3c0c0;
+				font-weight: bold;
+			}
+
+			.main-resume h2 {
+				font-size: 15px;
+				font-weight: 700;
+				margin: 10px 0px 0px 0px;
+			}
+
+			.main-resume h3 {
+				margin: 0px;
+				font-size: 14px;
+			}
+
+			.main-resume h4 {
+				margin: 0px;
+				font-weight: normal;
+				font-style: italic;
+			}
+
+		.resume-header {
+			background-color: #444;
+			color: #eee;
+			padding: 20px;
+		}
+
+		.resume-name {
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+		.resume-position {
+			padding-top: 10px;
+			font-size: 18px;
+		}
+
+		.resume-body {
+			width: 100%;
+			background-color: #eee;
+		}
+
+		.resume-left {
+			display: inline-block;
+			width: 690px;
+			padding-left: 20px;
+			padding-right: 10px;
+			padding-top: 10px;
+			background-color: #fff;
+		}
+
+		.resume-info-table {
+			width: 100%;
+		}
+
+		.resume-date-column {
+			width: 100px;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.resume-details {
+			display: inline-block;
+			width: 580px;
+		}
+
+		.resume-right {
+			display: inline-block;
+			float: right;
+			width: 250px;
+			vertical-align: top;
+			padding: 15px;
+		}
+
+		.resume-left ul {
+			margin-top: 0px;
+			padding-left: 15px;
+		}
+
+		.skilz {
+			width: 100%;
+			display: inline-block;
+			text-align: right;
+			line-height: 1;
+			margin-bottom: 20px;
+		}
+
+			.skilz::after {
+				display: block;
+				width: 100%;
+				text-align: right;
+			}
+
+			.skilz.skilz1::after {
+				content: "introduced";
+			}
+
+			.skilz.skilz2::after {
+				content: "familiar";
+			}
+
+			.skilz.skilz3::after {
+				content: "experienced";
+			}
+
+			.skilz.skilz4::after {
+				content: "advanced";
+			}
+
+			.skilz.skilz5::after {
+				content: "expert";
+			}
+
+			.skilz > div {
+				margin: 2px;
+				background-color: #aaa;
+				border-radius: 50%;
+				width: 12px;
+				height: 12px;
+				display: inline-block;
+			}
+
+			.skilz.skilz1 div:nth-child(-n+1) {
+				background-color: #555;
+			}
+
+			.skilz.skilz2 div:nth-child(-n+2) {
+				background-color: #555;
+			}
+
+			.skilz.skilz3 div:nth-child(-n+3) {
+				background-color: #555;
+			}
+
+			.skilz.skilz4 div:nth-child(-n+4) {
+				background-color: #555;
+			}
+
+			.skilz.skilz5 div:nth-child(-n+5) {
+				background-color: #555;
+			}
+
+		@@media print {
+			body {
+				margin: 0px;
+			}
+
+			a {
+				text-decoration: none;
+				color: #525252;
+			}
+
+			.career-skills {
+				margin-top: 150px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="main-resume">
+		<div class="resume-header">
+			<div class="resume-name">Thomas Lewis</div>
+			<div class="resume-position">Software Developer</div>
+		</div>
+
+		<div class="resume-body">
+			<div class="resume-left">
+				<p>Software Engineer with more than 30 years experience developing robust and successful systems. Vast experience spans the entire development life cycle from initial customer contact, continues through all aspects of design and development, and finally, successful installation and end-user training.</p>
+				<h1>Experience</h1>
+				<div class="resume-info-table">
+					<div>
+						<div class="resume-date-column">
+							<h3>2016-04 -</h3>
+							<h3>present</h3>
+						</div>
+						<div class="resume-details">
+							<h3>Lead Developer</h3>
+							<h4>HDL Engineering Consultants</h4>
+							<ul>
+								<li>Assigned to the Municipality of Anchorage Traffic Data division to lead a team developing the Traffic Data Management System.</li>
+								<li>Work closely with the client to deliver a high performance web application used to maintain and query traffic data.</li>
+								<li>Use C#, ASP.NET, HTML/CSS/Javascript, and Oracle to build an intuitive and efficient web application for the administration of data and for the public to generate data reports and perform map searches.</li>
+								<li>Implement ESRI ArcGIS tools for GIS content. Use ESRI's Javascript API to build an advanced and interactive map for searching and reporting traffic data.</li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<div class="resume-date-column">
+							<h3>2012-05 -</h3>
+							<h3>2016-03</h3>
+						</div>
+						<div class="resume-details">
+							<h3>Lead Developer</h3>
+							<h4>Hawley-Lambert</h4>
+							<ul>
+								<li>Develop a B2B eCommerce web site and warehouse management system for a leading bicycle parts & accessories distributor.</li>
+								<li>Use C#, ASP.NET, MVC, HTML/CSS/Javascript, and MS SQL Server to build a multi-lingual, high-volume, and responsive eCommerce web site to serve hundreds of bicycle retailers across the US and Canada.</li>
+								<li>Collaborate closely with the French-speaking development team in Quebec including daily scrum meetings held over video conferencing as part of the Agile process.</li>
+								<li>Gather technical requirements from warehouse personnel, purchasing staff, and even bicycle retailers to build an efficient and easy to use system.</li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<div class="resume-date-column">
+							<h3>2009-10 -</h3>
+							<h3>2012-05</h3>
+						</div>
+						<div class="resume-details">
+							<h3>Technical Lead</h3>
+							<h4>Resource Data, Inc.</h4>
+							<ul>
+								<li>Serve as Technical Lead on several essential projects in the Anchorage, Alaska and Houston, Texas areas using varied .NET, SQL and GIS tools. </li>
+								<li>Assigned to Anchorage Traffic Data division for implementing the Traffic Data Management System for maintaining and reporting on traffic collisions and volumes. Was handed a complex system that management feared would fail and never reach production and had it ready to deploy in a matter of months.</li>
+								<li>Assigned to Enstar Natural Gas company to implement a mobile application for monitoring gas meters. System was developed with ESRI ArcGIS Mobile and C# .NET WPF. Entire system was developed and deployed quicker than anybody expected, to the client's delight.</li>
+								<li>Assigned to Bp to create mobile applications using ESRI ArcGIS Mobile and .NET in Windows Mobile 6.0. The application was used to gather oil residue locations after the Horizon Oil Spill in the Gulf of Mexico. Was quickly recognized as a capable and efficient developer after streamlining the mobile application development process which allowed for rapid deployment of new mobile capabilities.</li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<div class="resume-date-column">
+							<h3>2004-06 -</h3>
+							<h3>2010-10</h3>
+						</div>
+						<div class="resume-details">
+							<h3>Principal Developer</h3>
+							<h4>Ipswitch</h4>
+							<ul>
+								<li>Work as development team leader for Ipswitch Messaging products. </li>
+								<li>Use C++, C#, and ASP.NET to develop industry leading email server and client software.</li>
+								<li>Obtained certification in Agile Development methodologies. Used this important knowledge to lead the development team as scrummaster.</li>
+								<li>Served as Product Development Manager for 18 months leading a team of talented developers. </li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<div class="resume-date-column">
+							<h3>1989-10 -</h3>
+							<h3>2004-06</h3>
+						</div>
+						<div class="resume-details">
+							<h3>Varied Positions</h3>
+							<h4>Business Owner, AgFirst Farm Credit Bank, Affinity, IBM, PMSC</h4>
+							<p>Additional details for these positions are available on my website or available upon request:</p>
+							<ul>
+								<li>Owner at Cafetech, LLC. Develop systems for public school food service in C++, Visual Basic and SQL Server.</li>
+								<li>Work for AgFirst. Develop a loan processing system using VB.NET, COM+ and SQL Server.</li>
+								<li>Work for Affinity Technologies. Use C++, OS/2, DB2/2 and Sybase to create advanced loan origination software.</li>
+								<li>Contractor with IBM. Develop results system for Equestrian sports at the 1996 Summer Olympics in Atlanta, GA using C++ in IBM OS/2 Presentation Manager and DB2/2.</li>
+								<li>Work for PMSC. Develop insurance systems using C++ in IBM OS/2 Presentation Manager with DB2/2 databases.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<h1>Education</h1>
+				<div>
+					<div class="resume-date-column">
+						<h3>1989-09 -</h3>
+						<h3>1991-05</h3>
+					</div>
+					<div class="resume-details">
+						<h3>Midlands Technical College</h3>
+						<p>Enrolled in the Information Technology program. Maintained a 4.0 GPA.</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="resume-right">
+				<h1>Personal Info</h1>
+				<h2>Address</h2>
+				<p>252 Saluda Island Road</p>
+				<p>Prosperity, South Carolina 29127</p>
+
+				<h2>Phone</h2>
+				<p>907-707-9885</p>
+
+				<h2>E-Mail</h2>
+				<p>ponderingtom@gmail.com</p>
+
+				<h2>WWW</h2>
+				<p><a href='https://www.gofortom.com' target="_blank">gofortom.com</a></p>
+
+				<h2>LinkedIn</h2>
+				<p><a href="https://www.linkedin.com/in/ponderingtom/" target="_blank">linkedin.com/in/ponderingtom</a></p>
+
+				<h1>Technical Skills</h1>
+				<p>C# .NET</p>
+				<div class="skilz skilz5"></div>
+
+				<p>ASP.NET</p>
+				<div class="skilz skilz5"></div>
+
+				<p>SQL (MS SQL and Oracle)</p>
+				<div class="skilz skilz4"></div>
+
+				<p>HTML/CSS/Javascript</p>
+				<div class="skilz skilz4"></div>
+
+				<p>jQuery/Responsive Web Design</p>
+				<div class="skilz skilz4"></div>
+
+				<p>C/C++</p>
+				<div class="skilz skilz4"></div>
+
+				<p>ESRI GIS Tools</p>
+				<div class="skilz skilz3"></div>
+
+				<h1 class="career-skills">Career Skills</h1>
+				<p>Full Life Cycle Development Process</p>
+				<div class="skilz skilz5"></div>
+
+				<p>Client Interaction</p>
+				<div class="skilz skilz5"></div>
+
+				<p>Team Interaction</p>
+				<div class="skilz skilz5"></div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.skilz').append('<div></div><div></div><div></div><div></div><div></div>');
+		});
+	</script>
+</body>
+</html>

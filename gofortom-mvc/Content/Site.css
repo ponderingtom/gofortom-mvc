@@ -1,24 +1,461 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+	font-family: Arimo;
+	font-size: 15px;
+	color: #525252;
+	line-height: 25.5px;
+	margin: 0px
 }
 
-/* Set padding to keep content from hitting the edges */
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: Arimo;
+	font-size:2em;
+	font-weight:700;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	height: 28px;
+	font-size: 14px;
+	padding-left: 20px;
+	background-color: #fff;
+	color: #525252;
+}
+
+	footer p {
+		margin: 0px;
+	}
+
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+	margin-top: 60px;
+	background-color: antiquewhite;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.main-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: right;
+	height: 60px;
+	background-color: #fff;
+	color: #525252;
+	border-bottom: solid 1px #ddd;
+	z-index: 1000;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.menu-title {
+	float: left;
+	padding-top: 15px;
+	padding-left: 80px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+	.menu-title i.fas {
+		color: #549a54;
+	}
+
+.menu-item {
+	display: inline-block;
+	margin: 15px 40px;
+	cursor: pointer;
+	font-size: 18px;
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.menu-item, .main-menu a:hover, .main-menu a:active, .main-menu a:visited, .main-menu a:link {
+	color: #525252;
+}
+
+	.menu-item:hover {
+		/*font-size: 28px;*/
+	}
+
+.main-image {
+	position: absolute;
+	z-index: -1;
+}
+
+	.main-image > img {
+		width: 100%;
+		/*max-height: 900px;*/
+	}
+
+.main-welcome {
+	float: right;
+	margin-right: 100px;
+	margin-top: 100px;
+	height: 400px;
+	width: 300px;
+	background-color: rgba(255, 255, 255, .9);
+	padding: 20px;
+}
+
+	.main-welcome > h1 {
+		text-align: center;
+	}
+
+	.main-welcome > p {
+		padding-top: 50px;
+		text-align: center;
+	}
+
+.construction {
+	width: 400px;
+	min-height: 50px;
+	font-size: 16px;
+	margin: 10px 50px;
+	padding: 20px 10px 13px 9px;
+	background-color: yellow;
+	text-align: center;
+	position: fixed;
+	box-shadow: 5px 5px 5px #777;
+}
+
+	.construction i {
+		font-size: 30px;
+		padding-right: 10px;
+	}
+
+.timeline-holder {
+	position: fixed;
+	width: 100%;
+	margin: auto;
+	padding-top: 25px;
+	display: inline-block;
+	background: rgba(207, 114, 114, 0.8);
+	padding-bottom: 5px;
+	color: #fff;
+	z-index: 1000;
+}
+
+.timeline {
+	position: relative;
+	background-color: #843535;
+	border-radius: 7px;
+	height: 14px;
+	margin: 10px 10px;
+	margin-top: 10px;
+}
+
+.tl-event {
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	border: solid 3px #843535;
+	border-radius: 50%;
+	top: -11px;
+	background-color: #fff;
+	background-size: cover;
+	background-position: center;
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+	.tl-event:hover {
+		width: 50px;
+		height: 50px;
+		z-index: 10;
+	}
+
+	.tl-event label {
+		position: absolute;
+		top: -23px;
+		text-align: center;
+		width: 51px;
+		left: -10px;
+	}
+
+	.tl-event.tl-1981 {
+		background-image: url("/images/ti-994a.jpg");
+		left: 1%;
+	}
+
+	.tl-event.tl-1989 {
+		background-image: url("/images/MTC_logo1.jpg");
+		left: 22%;
+	}
+
+	.tl-event.tl-1991 {
+		background-image: url("/images/pmsc.png");
+		left: 27%;
+	}
+
+	.tl-event.tl-1994 {
+		background-image: url("/images/acog.jpg");
+		left: 35%;
+	}
+
+	.tl-event.tl-1996 {
+		background-image: url("/images/affinity.jpg");
+		left: 46%;
+	}
+
+	.tl-event.tl-2000 {
+		background-image: url("/images/agfirst.jpg");
+		left: 51%;
+	}
+
+	.tl-event.tl-2001 {
+		background-image: url("/images/cafetech.png");
+		left: 54%;
+	}
+
+	.tl-event.tl-2004 {
+		background-image: url("/images/ipswitch.jpeg");
+		left: 62%;
+	}
+
+	.tl-event.tl-2009 {
+		background-image: url("/images/rdi.jpg");
+		left: 76%;
+	}
+
+	.tl-event.tl-2012 {
+		background-image: url("/images/hlc.png");
+		left: 84%;
+	}
+
+	.tl-event.tl-2016 {
+		background-image: url("/images/hdl.jpg");
+		left: 96%;
+	}
+
+.career-event {
+	position: relative;
+	margin: 15px 20px;
+	display: inline-block;
+	background-color: #fff;
+	box-shadow: 3px 3px 7px #999;
+}
+
+	.career-event:nth-child(2) {
+		margin-top: 100px;
+	}
+
+	.career-event .accomplishments {
+		position: relative;
+		width: 98%;
+		margin: 8px 0px;
+		font-size: 12px;
+		border: solid 2px #aaa;
+		border-radius: 3px;
+		box-shadow: 2px 2px 5px #ddd;
+		padding: 24px 5px 5px 5px;
+		text-align: left;
+	}
+
+		.career-event .accomplishments .title {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 23px;
+			line-height: 2;
+			text-align: center;
+			background-color: #ddd;
+		}
+
+		.career-event .accomplishments .skill {
+		}
+
+			.career-event .accomplishments .skill i {
+				padding-right: 5px;
+				font-size: 14px;
+			}
+
+	.career-event .img-container {
+		width: 60%;
+		max-height: 500px;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	.career-event img {
+		max-width: 100%;
+	}
+
+	.career-event:nth-child(even) .img-container {
+		float: right;
+	}
+
+	.career-event:nth-child(odd) .img-container {
+		float: left;
+	}
+
+.career-desc {
+	padding: 0px 20px;
+	width: 36%;
+}
+
+.career-event:nth-child(even) .career-desc {
+	float: left;
+}
+
+.career-event:nth-child(odd) .career-desc {
+	float: right;
+}
+
+.career-desc h1 {
+	text-align: center;
+}
+
+.career-desc p {
+}
+
+@media only screen and (max-width: 1000px) {
+	.construction {
+		width: 88%;
+		margin: 10px 3%;
+	}
+
+	.main-image {
+		position: initial;
+		z-index: -1;
+	}
+
+	.main-welcome {
+		float: initial;
+		margin-right: initial;
+		margin-top: initial;
+		height: initial;
+		width: initial;
+	}
+
+	.menu-title {
+		float: left;
+		padding-left: 5px;
+	}
+
+		.menu-title label {
+			display: none;
+		}
+
+	.menu-item {
+		margin: 15px 10px;
+		cursor: pointer;
+		font-size: 16px;
+		transition-property: all;
+		transition-duration: .5s;
+		transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+	}
+
+		.menu-item:hover {
+			font-size: 16px;
+		}
+
+	.timeline-holder {
+		height: 80%;
+		width: 51px;
+		padding-top: 0px;
+	}
+
+	.timeline {
+		width: 8px;
+		height: 95%;
+		margin-left: 9px;
+	}
+
+	.tl-event:hover {
+		width: 20px;
+		height: 20px;
+	}
+
+	.tl-event label {
+		top: -3px;
+		left: 9px;
+		font-size: 10px;
+	}
+
+	.tl-event {
+		left: -8px !important;
+		width: 26px;
+		height: 26px;
+	}
+
+		.tl-event.tl-1981 {
+			top: 1%;
+		}
+
+		.tl-event.tl-1989 {
+			top: 22%;
+		}
+
+		.tl-event.tl-1991 {
+			top: 27%;
+		}
+
+		.tl-event.tl-1994 {
+			top: 35%;
+		}
+
+		.tl-event.tl-1996 {
+			top: 46%;
+		}
+
+		.tl-event.tl-2000 {
+			top: 51%;
+		}
+
+		.tl-event.tl-2001 {
+			top: 54%;
+		}
+
+		.tl-event.tl-2004 {
+			top: 62%;
+		}
+
+		.tl-event.tl-2009 {
+			top: 76%;
+		}
+
+		.tl-event.tl-2012 {
+			top: 84%;
+		}
+
+		.tl-event.tl-2016 {
+			top: 96%;
+		}
+
+	.body-content {
+		background-color: #fff;
+	}
+
+	.career-event {
+		margin-left: 80px;
+		text-align: center;
+		box-shadow: initial;
+		border-bottom: solid 1px #834242;
+	}
+
+		.career-event:nth-child(2) {
+			margin-top: 0px;
+		}
+
+		.career-event .img-container {
+			width: 100% !important;
+			float: initial !important;
+		}
+
+		.career-event .career-desc {
+			width: 100% !important;
+			float: initial !important;
+			padding: 0px;
+			text-align: left;
+		}
+
+		.career-event .accomplishments {
+			position: relative;
+			width: 95%;
+			margin: 8px 0px;
+		}
 }

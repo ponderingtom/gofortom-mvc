@@ -1,0 +1,262 @@
+﻿@model gofortom_mvc.ViewModels.CareerViewModel
+@{
+    ViewBag.Title = "Career";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="timeline-holder">
+	<div class="timeline">
+		<div class="tl-event tl-1981">
+			<label>1981</label>
+		</div>
+		<div class="tl-event tl-1989">
+			<label>1989</label>
+		</div>
+		<div class="tl-event tl-1991">
+			<label>1991</label>
+		</div>
+		<div class="tl-event tl-1994">
+			<label>1994</label>
+		</div>
+		<div class="tl-event tl-1996">
+			<label>1996</label>
+		</div>
+		<div class="tl-event tl-2000">
+			<label>2000</label>
+		</div>
+		<div class="tl-event tl-2001">
+			<label>2001</label>
+		</div>
+		<div class="tl-event tl-2004">
+			<label>2004</label>
+		</div>
+		<div class="tl-event tl-2009">
+			<label>2009</label>
+		</div>
+		<div class="tl-event tl-2012">
+			<label>2012</label>
+		</div>
+		<div class="tl-event tl-2016">
+			<label>2016</label>
+		</div>
+	</div>
+</div>
+
+@foreach (var career in Model.Careers)
+{
+	<div class="career-event 1981">
+		<div class="img-container"><img src="@career.Image" /></div>
+		<div class="career-desc">
+			<h1>@(string.Format("{0}{1}", career.StartYear, career.EndYear.HasValue ? " - " + career.EndYear : ""))</h1>
+			<h1>@career.Title</h1>
+			@Html.Raw(career.Description)
+			<div class="accomplishments">
+				<div class="title">skills learned or used</div>
+				<div class="skill"><i class="fas fa-code"></i>Computer Programming Fundamentals</div>
+				<div class="skill"><i class="fas fa-code"></i>BASIC Programming Language</div>
+			</div>
+		</div>
+	</div>
+}
+
+
+<div class="career-event 1981">
+	<div class="img-container"><img src="images/ti-994a.jpg" /></div>
+	<div class="career-desc">
+		<h1>1981</h1>
+		<h1>It Begins</h1>
+		<p>My path to becoming a software engineer began in 10th grade. My school had received its first batch of computers. Some of you may remember the TRS-80. I was able to play with them a little, but in 11th grade, they switched over to the Texas Instruments TI99-4A with 16K of RAM. I ended up buying one for home and played with writing programs in Basic for many hours.</p>
+		<p>By the time I graduated from High School, I had upgraded to the Commodore 64. As you may suspect, it had 64K of RAM. I didn't know what to do with it all! </p>
+		<div class="accomplishments">
+			<div class="title">skills learned or used</div>
+			<div class="skill"><i class="fas fa-code"></i>Computer Programming Fundamentals</div>
+			<div class="skill"><i class="fas fa-code"></i>BASIC Programming Language</div>
+		</div>
+	</div>
+</div>
+<div class="career-event 1989">
+	<div class="img-container"><img src="images/MTC_logo1.jpg" /></div>
+	<div class="career-desc">
+		<h1>1989 - 1991</h1>
+		<h1>School</h1>
+		<p>In 1989, my father-in-law decided to write software for public school food service and asked if I would help him write the applications. The deal we made was I would work for him full time and he would pay for me to go to school. </p>
+		<p>I ended up writing all of the application and he focused on selling the software prepackaged on IBM clone computers. We would both go to the schools to install, train and maintain these systems. Since everything was completely custom written by me, the food service employees loved it. Whatever they wanted the system to do, I made it happen.</p>
+		<div class="accomplishments">
+			<div class="title">skills learned or used</div>
+			<div class="skill"><i class="fas fa-code"></i>Computer Programming Fundamentals</div>
+			<div class="skill"><i class="fas fa-code"></i>BASIC Visual BASIC 1.0, C / C++</div>
+			<div class="skill"><i class="fas fa-code"></i>Micro and Mainframe Assembler</div>
+			<div class="skill"><i class="fas fa-code"></i>Cobol / JCL</div>
+			<div class="skill"><i class="fas fa-code"></i>Client Interaction (Sales, Training, Support)</div>
+		</div>
+	</div>
+</div>
+<div class="career-event 1991">
+	<div class="img-container"><img src="images/pmsc.png" /></div>
+	<div class="career-desc">
+		<h1>1991 - 1994</h1>
+		<h1>PMSC</h1>
+		<p>Towards the end of my time in school (all of my programming classes were complete), Policy Management Systems offered the entire graduating class a job. Things were slow with my father-in-law's company, so I accepted a position for my first "real" programming job.</p>
+		<p>The journey had begun.</p>
+		<p>PMSC was a HUGE company with hundreds, if not thousands, of programmers. I worked on the client system. It was a fat client running in OS/2 Presentation Manager on IBM Clone computers. It was backed up with Mainframes and AS400 machines serving the data.</p>
+		<div class="accomplishments">
+			<div class="title">skills learned or used</div>
+			<div class="skill"><i class="fas fa-code"></i>C Programming Language</div>
+			<div class="skill"><i class="fas fa-code"></i>IBM OS/2 Presentation Manager</div>
+		</div>
+	</div>
+</div>
+<div class="career-event 1994">
+	<div class="img-container"><img src="images/acog.jpg" /></div>
+	<div class="career-desc">
+		<h1>1994 - 1996</h1>
+		<h1>Summer Olympics</h1>
+		<p>It was in 1994 that I decided to enter the contracting world. I had heard about IBM hiring contractors for the 1996 Summer Olympics and jumped at the chance. I was hired on to write the Results system for the Equestrian sports. I was on a team of about 20 developers with each of us having a sporting discipline to develop the software for. I worked closely with a guy from Norway, who was responsible for Equestrian Three Day Event.</p>
+		<p>I learned A LOT about the full life cycle of applications development at the Olympics. Deadlines were solid. The systems were all new and everything had to be tested 100% before the games began.</p>
+		<p>Side note: One of the highlights of my career happened on this job... I ran a meeting with the International Equestrian Federation where I was to demonstrate the application that would randomly fill the starting order for the Show Jumping competition. The president of this organization was none other than the sister to the King of Spain. Yeah, I was nervous, but I nailed it.</p>
+		<div class="accomplishments">
+			<div class="title">skills learned or used</div>
+			<div class="skill"><i class="fas fa-code"></i>C Programming Language</div>
+			<div class="skill"><i class="fas fa-code"></i>IBM OS/2 Presentation Manager</div>
+			<div class="skill"><i class="fas fa-code"></i>Client Interaction (Requirements Gathering, Training)</div>
+			<div class="skill"><i class="fas fa-code"></i>Full Development Life Cycle</div>
+		</div>
+	</div>
+</div>
+<div class="career-event 1996">
+	<div class="img-container"><img src="images/affinity.jpg" /></div>
+	<div class="career-desc">
+		<h1>1996-2000</h1>
+		<h1>Affinity Technologies</h1>
+		<p>After the Olympic contract was over, I had an opportunity to travel to Japan and work for the 1998 Winter Olympics in Nogano, Japan. I decided that was not a good fit since I had 4 young children at the time.</p>
+		<p>We returned to Columbia and I accepted a position with Affinity Technologies. This was a new company that had gone public shortly before I started. The main product was a loan decisioning system that would support Automated Loan Machines.</p>
+		<p>The systems used IBM OS/2 with DB2/2 and Sybase databases. The computers were installed in a kiosk that looked a lot like a standard ATM, but would allow the user to apply for a loan, and if approved, would print out a check for the approved amount.</p>
+		<div class="accomplishments">
+			<div class="title">skills learned or used</div>
+			<div class="skill"><i class="fas fa-code"></i>C Programming Language</div>
+			<div class="skill"><i class="fas fa-code"></i>IBM OS/2 Presentation Manager</div>
+			<div class="skill"><i class="fas fa-code"></i>Full Development Life Cycle</div>
+		</div>
+	</div>
+</div>
+<div class="career-event 2000">
+	<div class="img-container"><img src="images/AgFirst.JPG" /></div>
+	<div class="career-desc">
+		<h1>2000-2001</h1>
+		<h1>AgFirst Farm Credit Bank</h1>
+		<p>After the writing was on the wall that Affinity was on its last leg, so to speak, I followed my manager from Affinity to AgFirst. This was a big step for me as it was my introduction to the .NET world. It's interesting that it's been 18 years since I started using .NET. I honestly wasn't sure it would catch on... but... yeah, it did.</p>
+		<p>On this job, we created a new system from the ground up using VB.NET to create a fat client for their banking system.</p>
+		<div class="accomplishments">
+			<div class="title">skills learned or used</div>
+			<div class="skill"><i class="fas fa-code"></i>.NET Framework</div>
+			<div class="skill"><i class="fas fa-code"></i>VB.NET</div>
+			<div class="skill"><i class="fas fa-code"></i>COM+</div>
+		</div>
+	</div>
+</div>
+<div class="career-event 2001">
+	<div class="img-container"><img src="images/cafetech.png" /></div>
+	<div class="career-desc">
+		<h1>2001-2004</h1>
+		<h1>Cafetech, LLC</h1>
+		<p>While AgFirst was a great place to work, I had to leave. My father-in-law decided to sell his company that I wrote the software for. I bought the company and had to give my entrepreneurial skills a try.</p>
+		<p>I spent the next few years rewriting the original systems in a mix of Visual Basic 6.0 and C++. I vastly improved the performance of the system and started building a team to sell the systems to public school food services across the southeast.</p>
+		<p>In 2004, I decided that I'm a much better programmer than I am a business owner. I sold the company and moved back into a "real" programming role and never looked back.</p>
+		<div class="accomplishments">
+			<div class="title">skills learned or used</div>
+			<div class="skill"><i class="fas fa-code"></i>.NET Framework</div>
+			<div class="skill"><i class="fas fa-code"></i>Visual Basic 6.0, C++, VB.NET</div>
+			<div class="skill"><i class="fas fa-code"></i>MS SQL Server</div>
+			<div class="skill"><i class="fas fa-code"></i>TCP/IP Network Protocal</div>
+			<div class="skill"><i class="fas fa-code"></i>Client Interaction (Sales, Training, Support)</div>
+		</div>
+	</div>
+</div>
+<div class="career-event 2004">
+	<div class="img-container"><img src="images/ipswitch.jpeg" /></div>
+	<div class="career-desc">
+		<h1>2004-2010</h1>
+		<h1>Ipswitch</h1>
+		<p>I followed a couple of friends to Ipswitch after selling my company. My first project here was writing the installation systems for the Messaging products using InstallShield. This was fun, but it wasn't very exciting for a programmer. However, while on the installs team, I wrote an automated build system that would allow the different divisions at Ipswitch to automate the build and deployment of their systems. That was fun.</p>
+		<p>Not long after starting at Ipswitch, I transferred to the Messaging team. We used C++ for the core system, and I joined as they were kicking off a project to rewrite the email admin and email client in C# and ASP.NET.</p>
+		<p>After another year or so, I was made Development Manager, which I continued for about 18 months. In that time, I also rewrote the SMTP server in C#. </p>
+		<div class="accomplishments">
+			<div class="title">skills learned or used</div>
+			<div class="skill"><i class="fas fa-code"></i>.NET Framework</div>
+			<div class="skill"><i class="fas fa-code"></i>C++, C#.NET</div>
+			<div class="skill"><i class="fas fa-code"></i>Web Development</div>
+			<div class="skill"><i class="fas fa-code"></i>MS SQL Server</div>
+			<div class="skill"><i class="fas fa-code"></i>TCP/IP Network Protocal</div>
+			<div class="skill"><i class="fas fa-code"></i>Mail Protocals (SMTP, IMAP, POP, etc.)</div>
+		</div>
+	</div>
+</div>
+<div class="career-event 2009">
+	<div class="img-container"><img src="images/rdi.jpg" /></div>
+	<div class="career-desc">
+		<h1>2009-2012</h1>
+		<h1>Resource Data</h1>
+		<p>The Alaska adventure begins! In October, 2009, we decided it was time to move to Alaska. The kids were grown and on their own and we wanted an adventure. I landed a position at Resource Data, Inc (RDI) as a Senior Developer.</p>
+		<p>I was immediately placed at the Municipality of Anchorage Traffic department to work on their Traffic Data Management System (TDMS). This was a C# ASP.NET web application with a, Oracle DB serving the data and ESRI ArcGIS serving the geospatial data. And when I say I was assigned to work on it, I was actually assigned to save it. There were fears that it would not make production because of past and current problems. Within two or three months, I saved the project. I actually still work on this project today... but more on that later...</p>
+		<p>After about a year in Alaska, we returned to South Carolina for personal reasons. I stayed on with RDI as a remote employee. They asked if I would like to go to Houston for a few months to help out with the Bp Oil Spill Response. I couldn't pass that up. 9 months later, I was finished with that project. I learned a great deal about the ESRI products since I was working directly with some of ESRI's brightest developers. </p>
+		<p>When I wasn't working on TDMS or the Oil Spill Response, they assigned me to Enstar Gas Company. My task there was to create a GIS application for the field personnel to use to inspect gas meters and record data related to atmospheric corrosion. I used C# .NET and ESRI ArcGIS Mobile to create a WPF windows application. My manager said he loved the user interface (UI) that ESRI ArcGIS Mobile provided. I had to inform him that it was my UI, not ESRI's. :) </p>
+		<div class="accomplishments">
+			<div class="title">skills learned or used</div>
+			<div class="skill"><i class="fas fa-code"></i>.NET Framework</div>
+			<div class="skill"><i class="fas fa-code"></i>C#.NET</div>
+			<div class="skill"><i class="fas fa-code"></i>Web Development</div>
+			<div class="skill"><i class="fas fa-code"></i>MS SQL Server, Oracle</div>
+			<div class="skill"><i class="fas fa-code"></i>ESRI Tools (ArcMap, ArcGIS Mobile, ArcObjects)</div>
+			<div class="skill"><i class="fas fa-code"></i>Windows Mobile 6.0</div>
+			<div class="skill"><i class="fas fa-code"></i>Client Interaction (Requirements Gathering, Support, Training)</div>
+		</div>
+	</div>
+</div>
+<div class="career-event 2012">
+	<div class="img-container"><img src="images/hlc.png" /></div>
+	<div class="career-desc">
+		<h1>2012-2016</h1>
+		<h1>Hawley-Lambert</h1>
+		<p>I started working for Hawley in 2012 on their warehouse management system and their B2B eCommerce web application. This was a lot of fun. I was surprised when I went into the interview to find the manager was a former coworker at Affinity.</p>
+		<p>After a few years working on these systems, Hawley became partners with Cycles Lambert in Quebec. We developed a new B2B web application to be used by the two companies. This involved working closely with the Canadian (French speaking) developers and frequent travel to Canada. </p>
+		<div class="accomplishments">
+			<div class="title">skills learned or used</div>
+			<div class="skill"><i class="fas fa-code"></i>.NET Framework</div>
+			<div class="skill"><i class="fas fa-code"></i>C#.NET</div>
+			<div class="skill"><i class="fas fa-code"></i>Web Development (HTML, CSS, Javascript, jQuery, Bootstrap, AJAX)</div>
+			<div class="skill"><i class="fas fa-code"></i>MS SQL Server</div>
+			<div class="skill"><i class="fas fa-code"></i>Windows Mobile 6.0, 7.0</div>
+			<div class="skill"><i class="fas fa-code"></i>Client Interaction (Requirements Gathering, Support)</div>
+		</div>
+	</div>
+</div>
+<div class="career-event 2016">
+	<div class="img-container"><img src="images/hdl.jpg" /></div>
+	<div class="career-desc">
+		<h1>2016-Present</h1>
+		<h1>HDL Engineering</h1>
+		<p>I joined HDL in 2016 as a contractor to continue work on the Traffic Data Management System that I worked on with RDI. They are an engineering firm that already had a contract with the city.</p>
+		<p>I have been able to greatly enhance my web development skills on this project. I've also spent a lot of time improving performance of the some of the legacy SQL. Some of the report queries have gone from processing in 30+ seconds to processing in less than 1 second. There seems to not have been much understanding of SQL and data structures when this part of the system was created.</p>
+		<div class="accomplishments">
+			<div class="title">skills learned or used</div>
+			<div class="skill"><i class="fas fa-code"></i>.NET Framework</div>
+			<div class="skill"><i class="fas fa-code"></i>C#.NET</div>
+			<div class="skill"><i class="fas fa-code"></i>Web Development (HTML, CSS, Javascript, jQuery, AJAX)</div>
+			<div class="skill"><i class="fas fa-code"></i>Oracle</div>
+			<div class="skill"><i class="fas fa-code"></i>ESRI Tools (ArcMap, ArcGIS Mobile, ArcObjects)</div>
+			<div class="skill"><i class="fas fa-code"></i>Client Interaction (Requirements Gathering, Support)</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+		$('.tl-event').click(function () {
+			window.scroll({
+				top: $('.career-event.' + $(this).find('label').html()).position().top - 120,
+				left: 0,
+				behavior: 'smooth'
+			});
+		});
+</script>
+

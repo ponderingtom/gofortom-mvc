@@ -142,11 +142,18 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CareerController.cs" />
+    <Compile Include="Controllers\HobbiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Career.cs" />
+    <Compile Include="Controllers\ResumeController.cs" />
+    <Compile Include="Models\Hobbies.cs" />
+    <Compile Include="Models\Resume.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CareerViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -155,11 +162,24 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\acog.jpg" />
+    <Content Include="images\affinity.jpg" />
+    <Content Include="images\AgFirst.JPG" />
+    <Content Include="images\cafetech.png" />
+    <Content Include="images\hdl.jpg" />
+    <Content Include="images\hlc.png" />
+    <Content Include="images\ipswitch.jpeg" />
+    <Content Include="images\MTC_logo1.jpg" />
+    <Content Include="images\pmsc.png" />
+    <Content Include="images\rdi.jpg" />
+    <Content Include="images\ti-994a.jpg" />
+    <Content Include="images\tom-mountain.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -185,10 +205,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Career\Index.cshtml" />
+    <Content Include="Views\Hobbies\Index.cshtml" />
+    <Content Include="Views\Resume\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
